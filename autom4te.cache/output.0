@@ -2597,7 +2597,7 @@ am__tar='$${TAR-tar} chof - "$$tardir"' am__untar='$${TAR-tar} xf -'
 
 ac_config_headers="$ac_config_headers config.h"
 
-
+M_CPPFLAGS
 # Checks for programs.
 ac_ext=c
 ac_cpp='$CPP $CPPFLAGS'
@@ -4090,7 +4090,7 @@ done
 
 # Checks for library functions.
 
-ac_config_files="$ac_config_files Makefile src/Makefile src/kernel/Makefile"
+ac_config_files="$ac_config_files Makefile src/Makefile src/ccl/Makefile src/kernel/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -4821,6 +4821,7 @@ do
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
+    "src/ccl/Makefile") CONFIG_FILES="$CONFIG_FILES src/ccl/Makefile" ;;
     "src/kernel/Makefile") CONFIG_FILES="$CONFIG_FILES src/kernel/Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;

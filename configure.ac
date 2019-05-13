@@ -6,10 +6,11 @@ AC_INIT(amumu, 1.0, admin@eeob.com)
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/amumu.c])
 AC_CONFIG_HEADERS([config.h])
-
+M_CPPFLAGS
 # Checks for programs.
 AC_PROG_CC
-AC_PROG_RANLIB 
+AC_PROG_RANLIB
+LT_INIT 
 # Checks for libraries.
 
 # Checks for header files.
