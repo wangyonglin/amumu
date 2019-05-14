@@ -97,7 +97,8 @@ am__v_AR_0 = @echo "  AR      " $@;
 am__v_AR_1 = 
 libamumu_a_AR = $(AR) $(ARFLAGS)
 libamumu_a_LIBADD =
-am_libamumu_a_OBJECTS = bst.$(OBJEXT) boot.$(OBJEXT) socket.$(OBJEXT)
+am_libamumu_a_OBJECTS = bst.$(OBJEXT) boot.$(OBJEXT) socket.$(OBJEXT) \
+	uart.$(OBJEXT)
 libamumu_a_OBJECTS = $(am_libamumu_a_OBJECTS)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -280,7 +281,7 @@ top_builddir = ../..
 top_srcdir = ../..
 AUTOMAKE_OPTIONS = foreign
 noinst_LIBRARIES = libamumu.a  
-libamumu_a_SOURCES = bst.h bst.c boot.h boot.c socket.h socket.c
+libamumu_a_SOURCES = bst.h bst.c boot.h boot.c socket.h socket.c uart.h uart.c
 all: all-am
 
 .SUFFIXES:
@@ -333,6 +334,7 @@ distclean-compile:
 include ./$(DEPDIR)/boot.Po
 include ./$(DEPDIR)/bst.Po
 include ./$(DEPDIR)/socket.Po
+include ./$(DEPDIR)/uart.Po
 
 .c.o:
 	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

@@ -319,7 +319,7 @@ top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
 SUBDIRS = kernel
 amumu_SOURCES = amumu.c
-amumu_LDADD = kernel/libamumu.a
+amumu_LDADD = kernel/libamumu.a -lpthread
 all: all-recursive
 
 .SUFFIXES:
